@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+}
+
+.home-table {
+  .filter_wrap {
+    background: #fff;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1pt solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    .mat-form-field {
+      width: 24%;
+    }
+  }
+}
+
+.mat-table {
+  box-shadow: none;
+  border: 1pt solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}

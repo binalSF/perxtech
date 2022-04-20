@@ -1,0 +1,21 @@
+<!-- <app-nav-bar *ngIf="navBarService.visible"></app-nav-bar> -->
+<mat-drawer-container class="app-wrapper" autosize>
+    <mat-drawer #drawer class="app-sidenav" mode="side">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/layout/home">
+                <mat-icon>home</mat-icon> Home
+            </a>
+            <a mat-list-item routerLink="/layout/directive">
+                <mat-icon>settings</mat-icon> Directive
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+    <header>
+        <button mat-mini-fab color="primary" aria-label="Main Menu" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </header>
+    <div class="app-content">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

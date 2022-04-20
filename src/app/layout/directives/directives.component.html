@@ -1,0 +1,29 @@
+<div class="formatter">
+    <mat-grid-list cols="1" rowHeight="350px" gutterSize="15px">
+
+        <mat-grid-tile>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Change the text!</mat-label>
+                <textarea rows="5" matInput placeholder="Ex. Type here..." [(ngModel)]="textInput"
+                    (ngModelChange)="modelChangeFn($event)"></textarea>
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="textview">
+                <p [ngStyle]="currentStyles" *ngIf="textInput; else showText" [innerHTML]="textInput"></p>
+                <ng-template #showText>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.
+                </ng-template>
+
+            </div>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>

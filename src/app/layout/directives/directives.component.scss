@@ -1,0 +1,23 @@
+.formatter {
+    padding: 0;
+    background-color: #f4f4f8;
+  
+    .mat-form-field {
+      width: 100%;
+    }
+  
+    .textview {
+      height: 290px;
+      overflow-y: auto;
+      background: #fff;
+      margin-bottom: 18px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 50px rgba(243, 246, 248, 0.5);
+      min-width: 100%;
+      line-height: 1.4;
+      font-size: 18px;
+      border: 2px solid #dcdce1;
+      //white-space: pre;\
+    }
+  }
