@@ -8,6 +8,7 @@ const routes: Routes = [
       import("./landing-page/landing-page.module").then(
         (m) => m.LandingPageModule
       ),
+    pathMatch: "full",
   },
   {
     path: "landing-page",
@@ -27,6 +28,7 @@ const routes: Routes = [
       import("./landing-page/landing-page.module").then(
         (m) => m.LandingPageModule
       ),
+    pathMatch: "full",
   },
 ];
 
